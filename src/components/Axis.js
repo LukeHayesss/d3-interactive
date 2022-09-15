@@ -1,3 +1,4 @@
+/** AxisX.js */
 import React from "react";
 import PropTypes from "prop-types";
 import * as d3 from "d3";
@@ -29,7 +30,7 @@ const Axis = ({
       .attr("opacity", 0.5)
       .attr("color", "white")
       .attr("font-size", "0.75rem");
-  }, [scale, type, ticks, tickFormat, disableAnimation]);
+  }, [scale, ticks, tickFormat, type, disableAnimation]);
 
   React.useEffect(() => {
     d3.select(anchorEl)
